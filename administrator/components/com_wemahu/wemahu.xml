@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_wemahu</name>
+	<author>Simon Samtleben</author>
+	<creationDate>November 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>support@nekudo.com</authorEmail>
+	<authorUrl>http://nekudo.com</authorUrl>
+	<version>1.0.0</version>
+	<description>COM_WEMAHU_XML_DESCRIPTION</description>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>
+
+	<administration>
+		<menu img="class:wemahu">com_wemahu</menu>
+
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+			<folder>libs</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>license.txt</filename>
+			<filename>wemahu.php</filename>
+			<filename>wemahu_cli.php</filename>
+		</files>
+	</administration>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Wemahu Update Server">http://nekudo.com/wemahu/updates/wemahu_updates.xml</server>
+	</updateservers>
+</extension>

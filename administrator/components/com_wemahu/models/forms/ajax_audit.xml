@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_wemahu/models/fields">
+		<field name="ruleset"
+			type="rulesets"
+			label="COM_WEMAHU_FIELD_RULESET_LABEL"
+			description="COM_WEMAHU_FIELD_RULESET_DESC">
+		</field>
+	</fieldset>
+</form>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="general">
+		<field name="id" type="text" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
+
+		<field name="name" type="text" default="" label="COM_WEMAHU_FIELD_RULESET_NAME_LABEL" description="COM_WEMAHU_FIELD_RULESET_NAME_DESC" />
+
+		<field name="filecheck" type="radio" class="btn-group" default="1"
+			label="COM_WEMAHU_FIELD_ENABLE_FILECHECK_LABEL"
+			description="COM_WEMAHU_FIELD_ENABLE_FILECHECK_DESC">
+			<option	value="0">JNO</option>
+			<option	value="1">JYES</option>
+		</field>
+	</fieldset>
+
+	<fieldset name="filecheckAuditSettings" addfieldpath="/administrator/components/com_wemahu/models/fields">
+		<field name="scandir" type="text" default="" label="COM_WEMAHU_FIELD_SCANDIR_LABEL" description="COM_WEMAHU_FIELD_SCANDIR_DESC" />
+
+		<field name="regex_check" type="radio" class="btn-group" default="1"
+			label="COM_WEMAHU_FIELD_ENABLE_REGEX_CHECK_LABEL"
+			description="COM_WEMAHU_FIELD_ENABLE_REGEX_CHECK_DESC">
+			<option	value="0">JNO</option>
+			<option	value="1">JYES</option>
+		</field>
+
+		<field name="hash_check" type="radio" class="btn-group" default="1"
+			label="COM_WEMAHU_FIELD_ENABLE_HASH_CHECK_LABEL"
+			description="COM_WEMAHU_FIELD_ENABLE_HASH_CHECK_DESC">
+			<option	value="0">JNO</option>
+			<option	value="1">JYES</option>
+		</field>
+
+		<field name="regex_db" type="list" label="COM_WEMAHU_FIELD_REGEX_DB_LABEL" description="COM_WEMAHU_FIELD_REGEX_DB_DESC" default="0" class="inputbox">
+			<option value="regex_complete">COM_WEMAHU_OPTION_REGEX_DB_COMPLETE</option>
+			<!-- <option value="regex_medium">COM_WEMAHU_OPTION_REGEX_DB_MEDIUM</option> -->
+		</field>
+
+		<field name="hash_check" type="radio" class="btn-group" default="1"
+			label="COM_WEMAHU_FIELD_ENABLE_HASH_CHECK_LABEL"
+			description="COM_WEMAHU_FIELD_ENABLE_HASH_CHECK_DESC">
+			<option	value="0">JNO</option>
+			<option	value="1">JYES</option>
+		</field>
+
+		<field name="filetypes" type="text" default="php,php4,php5" label="COM_WEMAHU_FIELD_FILETYPE_FILTER_LABEL" description="COM_WEMAHU_FIELD_FILETYPE_FILTER_DESC" />
+
+		<field name="filesize_max" type="text" default="512000" label="COM_WEMAHU_FIELD_FILESIZE_FILTER_LABEL" description="COM_WEMAHU_FIELD_FILESIZE_FILTER_DESC" />
+
+		<field name="max_results_file" type="text" default="5" label="COM_WEMAHU_FIELD_MAX_RESULTS_FILE_LABEL" description="COM_WEMAHU_FIELD_MAX_RESULTS_FILE_DESC" />
+
+		<field name="max_results_total" type="text" default="100" label="COM_WEMAHU_FIELD_MAX_RESULTS_TOTAL_LABEL" description="COM_WEMAHU_FIELD_MAX_RESULTS_TOTAL_DESC" />
+	</fieldset>
+</form>
