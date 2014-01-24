@@ -6,7 +6,7 @@
 	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>support@nekudo.com</authorEmail>
-	<authorUrl>http://nekudo.com</authorUrl>
+	<authorUrl>https://nekudo.com</authorUrl>
 	<version>1.0.0</version>
 	<description>COM_WEMAHU_XML_DESCRIPTION</description>
 
@@ -51,6 +51,6 @@
 	</administration>
 
 	<updateservers>
-		<server type="extension" priority="1" name="Wemahu Update Server">http://nekudo.com/wemahu/updates/wemahu_updates.xml</server>
+		<server type="extension" priority="1" name="Wemahu Update Server">https://nekudo.com/wemahu/updates/wemahu_updates.xml</server>
 	</updateservers>
 </extension>
