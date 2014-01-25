@@ -4,7 +4,7 @@
  * @license GNU General Public License version 2 or later; see license.txt
  * @copyright nekudo.com
  * @author Simon Samtleben <support@nekudo.com>
- * @version 1.0.0
+ * @version 1.0.1
  */
 defined('_JEXEC') or die('Restricted access');
 
