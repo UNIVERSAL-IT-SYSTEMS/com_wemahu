@@ -163,6 +163,7 @@ class AuditFilecheck extends AuditBase implements Audit
 	 *
 	 * @todo Submit data to nekudo.com for analysis.
 	 *
+	 * @throws AuditException
 	 * @param ReportItem $ReportItem The item that should be added to whitelist.
 	 * @return boolean True if item was added to whitelist false on error.
 	 */
