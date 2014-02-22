@@ -16,6 +16,9 @@ defined('_JEXEC') or die('Restricted access');
 		<div class="modal-body">
 			<div id="wmAjaxSystemMsg"></div>
 
+			<h4><?php echo JText::_('COM_WEMAHU_REPORT_AFFECTED_FILE'); ?></h4>
+			<pre><?php echo $this->ReportItem->affectedFile; ?></pre>
+
 			<h4><?php echo JText::_('COM_WEMAHU_REPORT_ITEM_INFO'); ?></h4>
 			<p class="reportItemDesc"><?php echo htmlentities($this->ReportItem->matchDescription); ?></p>
 
@@ -43,6 +46,9 @@ defined('_JEXEC') or die('Restricted access');
 		</div>
 		<div class="modal-body">
 			<div id="wmAjaxSystemMsg"></div>
+
+			<h4><?php echo JText::_('COM_WEMAHU_REPORT_AFFECTED_FILE'); ?></h4>
+			<pre><?php echo $this->ReportItem->affectedFile; ?></pre>
 
 			<h4><?php echo JText::_('COM_WEMAHU_REPORT_ITEM_INFO'); ?></h4>
 			<p>

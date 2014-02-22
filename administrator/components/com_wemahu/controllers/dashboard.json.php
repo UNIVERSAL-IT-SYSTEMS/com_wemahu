@@ -73,6 +73,10 @@ class WemahuControllerDashboard extends JControllerAdmin
 		{
 			$WemahuSettings->auditSettings['filecheck']['maxResultsTotal'] = $rulesetData->max_results_total;
 		}
+		if($WemahuSettings->auditSettings['filecheck']['hashCheck'] === true && !empty($rulesetData->hash_check_blacklist))
+		{
+			$WemahuSettings->auditSettings['filecheck']['hashCheckBlacklist'] = explode("\n", str_replace("\r", "", $rulesetData->hash_check_blacklist));
+		}
 
 		// Init Wemahu:
 		$Wemahu = new Wemahu\Wemahu;

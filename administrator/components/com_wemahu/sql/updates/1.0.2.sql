@@ -1,0 +1,1 @@
+ALTER TABLE #__wm_rulesets ADD hash_check_blacklist TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER hash_check;

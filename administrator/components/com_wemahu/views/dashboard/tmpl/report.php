@@ -32,7 +32,7 @@ defined('_JEXEC') or die('Restricted access');
 					<tr class="wmReportItem" data-reportitemid="<?php echo $i; ?>">
 						<td><?php echo $itemCount; ?></td>
 						<td><?php echo $ReportItem->matchName; ?></td>
-						<td><?php echo $this->escape($ReportItem->match); ?></td>
+						<td><?php echo $this->escape(substr($ReportItem->matchSnippet, 0, 100)); ?></td>
 						<td><?php echo $ReportItem->affectedFile; ?></td>
 					</tr>
 					<?php $itemCount++; ?>

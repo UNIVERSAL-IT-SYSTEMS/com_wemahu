@@ -44,6 +44,11 @@
 			<option	value="1">JYES</option>
 		</field>
 
+        <field name="hash_check_blacklist" type="textarea" default=""
+            label="COM_WEMAHU_FIELD_HASH_CHECK_BLACKLIST_LABEL"
+            description="COM_WEMAHU_FIELD_HASH_CHECK_BLACKLIST_DESC"
+			rows="6" cols="40" />
+
 		<field name="filetypes" type="text" default="php,php4,php5" label="COM_WEMAHU_FIELD_FILETYPE_FILTER_LABEL" description="COM_WEMAHU_FIELD_FILETYPE_FILTER_DESC" />
 
 		<field name="filesize_max" type="text" default="512000" label="COM_WEMAHU_FIELD_FILESIZE_FILTER_LABEL" description="COM_WEMAHU_FIELD_FILESIZE_FILTER_DESC" />

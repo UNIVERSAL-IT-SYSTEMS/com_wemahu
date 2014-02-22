@@ -95,6 +95,15 @@ JHtml::_('formbehavior.chosen', 'select');
 
 					<div class="control-group">
 						<div class="control-label">
+							<?php echo $this->form->getLabel('hash_check_blacklist'); ?>
+						</div>
+						<div class="controls">
+							<?php echo $this->form->getInput('hash_check_blacklist'); ?>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<div class="control-label">
 							<?php echo $this->form->getLabel('filetypes'); ?>
 						</div>
 						<div class="controls">
