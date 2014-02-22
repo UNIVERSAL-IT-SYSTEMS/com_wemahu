@@ -53,6 +53,7 @@ class WemahuControllerDashboard extends JControllerAdmin
 		{
 			$WemahuSettings->auditSettings['filecheck']['scanDir'] = $rulesetData->scandir;
 		}
+		$WemahuSettings->auditSettings['filecheck']['scanDir'] = rtrim($WemahuSettings->auditSettings['filecheck']['scanDir'], '/');
 		if(!empty($rulesetData->regex_db))
 		{
 			$WemahuSettings->auditSettings['filecheck']['pathRegexDb'] = JPATH_ADMINISTRATOR . '/components/com_wemahu/libs/wemahu/db/' . $rulesetData->regex_db . '.wmdb';
