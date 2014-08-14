@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>support@nekudo.com</authorEmail>
 	<authorUrl>https://nekudo.com</authorUrl>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<description>COM_WEMAHU_XML_DESCRIPTION</description>
 
 	<install>
@@ -51,6 +51,6 @@
 	</administration>
 
 	<updateservers>
-		<server type="extension" priority="1" name="Wemahu Update Server">https://nekudo.com/wemahu/updates/wemahu_updates.xml</server>
+		<server type="extension" priority="1" name="Wemahu Update Server">https://wemahu.com/updates/wemahu_updates.xml</server>
 	</updateservers>
 </extension>
